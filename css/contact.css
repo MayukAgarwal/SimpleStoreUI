@@ -1,62 +1,62 @@
 .contact-card{
-	width: 80%;
-	border-radius: 5px;
 	background: #fff;
+	border-radius: 5px;
 	margin: 30px auto;
 	padding: 30px;
+	width: 80%;
 }
 .contact-logo{
 	padding: 0 25px 25px 25px;
 }
 .contact-heading{
-	text-align: center;
 	font-weight: bold;
+	text-align: center;
 }
 .contact-subheading{
-	text-align: center;
-	font-size: 0.9em;
-	color: rgba(0,0,0,0.6);
-	width: 85%;
 	align-self: center;
+	color: rgba(0,0,0,0.6);
+	font-size: 0.9em;
+	text-align: center;
+	width: 85%;
 }
 .wrap-input1{
+	margin-bottom: 20px;
 	width: 100%;
 	z-index: 1;
-	margin-bottom: 20px;
 }
 .input1 {
-    display: block;
-    width: 100%;
+	border: none;
+	outline: none;
     background: #e6e6e6;
+    color: #666666;
+    display: block;
     font-family: Montserrat-Bold;
     font-size: 15px;
     line-height: 1.5;
-    color: #666666;
-	outline: none;
-	border: none;
+    width: 100%;
 }
 input.input1 {
-	height: 50px;
 	border-radius: 25px;
+	height: 50px;
 	padding: 0 30px;
 }
 textarea.input1 {
-    min-height: 150px;
     border-radius: 25px;
+    min-height: 150px;
     padding: 12px 30px;
 }
 .contact1-form-btn {
-    min-width: 193px;
-    height: 50px;
-    border-radius: 25px;
+	border: none;
+	outline: none;
     background: #57b846;
+    border-radius: 25px;
+    color: #fff;
     font-family: Montserrat-Bold;
     font-size: 15px;
+    height: 50px;
     line-height: 1.5;
-    color: #fff;
+    min-width: 193px;
     padding: 0 25px;
-	outline: none;
-	border: none;
 }
 .invalid-text {
     color: #de2525d1;
@@ -65,17 +65,17 @@ textarea.input1 {
 }
 .toast-msg{
 	text-align: center;
-    color: #fff;
     background-color: rgba(0,0,0,.5);
-    padding: 10px 30px;
     border-radius: 7px;
-    position: fixed;
     bottom: 60px;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 1em;
-    z-index: 10;
+    color: #fff;
     display: none;
+    font-size: 1em;
+    left: 50%;
+    padding: 10px 30px;
+    position: fixed;
+    transform: translate(-50%);
+    z-index: 10;
 }
 @media only screen and (min-width: 800px) {
 	.contact-card{

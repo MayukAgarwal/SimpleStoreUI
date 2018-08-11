@@ -1,49 +1,49 @@
 .product-main-section{
-	display: flex;
 	background: #fff;
+	display: flex;
 }
 .product-image-section img{
-	width: 100%;
 	height: auto;
+	width: 100%;
 }
 .product-title{
-	font-weight: bold;
 	color: rgba(0,0,0,0.8);
+	font-weight: bold;
 }
 .product-price-section .mrp{
-	text-decoration: line-through;
-	padding-right: 10px;
-	font-size: 1.1em;
 	color: rgba(0,0,0,0.7);
+	font-size: 1.1em;
+	padding-right: 10px;
+	text-decoration: line-through;
 }
 .product-price-section .save{
-	font-size: 0.8em;
-	color: rgba(0,0,0,0.7);
 	align-self: center;
+	color: rgba(0,0,0,0.7);
+	font-size: 0.8em;
 }
 .product-price-section .price{
-	padding: 10px 0;
-	font-size: 1.7em;
 	color: rgba(0,0,0,0.9);
+	font-size: 1.7em;
 	font-weight: bold;
+	padding: 10px 0;
 }
 .size-section{
 	padding-bottom: 20px;
 }
 .size-item{
-	background-color: #FFF;
-	border: 1px solid rgba(0,0,0,0.8);
-	border-radius: 50px;
-	padding: 0;
-	min-width: 45px;
-	height: 45px;
-	text-align: center;
-	margin: 10px 10px 0 0;
-	cursor: pointer;
-	color: rgba(0,0,0,0.8);
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	background-color: #FFF;
+	border-radius: 50px;
+	border: 1px solid rgba(0,0,0,0.8);
+	color: rgba(0,0,0,0.8);
+	cursor: pointer;
+	display: flex;
+	height: 45px;
+	justify-content: center;
+	margin: 10px 10px 0 0;
+	min-width: 45px;
+	padding: 0;
+	text-align: center;
 }
 .size-item:hover{
 	background-color: rgba(0,0,0,0.8);
@@ -53,19 +53,19 @@
 	padding: 10px 40px 0 0;
 }
 .product-info-list ul{
-	padding: 10px 0 0 20px;
 	font-size: 0.8em;
 	line-height: 20px;
 	list-style-type: disc;
+	padding: 10px 0 0 20px;
 }
 .product-info-heading{
 	font-size: 0.7em;
 }
 .button-section button{
-	outline: none;
 	border: none;
-	padding: 10px 0;
 	color: white;
+	outline: none;
+	padding: 10px 0;
 }
 .wishlist-btn{
 	background: rgb(164, 164, 164);
@@ -76,19 +76,19 @@
 
 @media only screen and (min-width: 800px) {
 	.product-main-section{
-		justify-content: space-between;
-		width: 80%;
 		border-radius: 5px;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 2px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+		justify-content: space-between;
 		margin: 30px auto;
 		padding: 30px;
-		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 2px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+		width: 80%;
 	}
 	.product-image-section{
 		width: 40%;
 	}
 	.product-detail-section{
-		width: 50%;
 		align-items: flex-start;
+		width: 50%;
 	}
 	.product-title{
 		font-size: 1.3em;
@@ -97,8 +97,8 @@
 		padding: 10px 0;
 	}
 	.button-section button{
-		margin: 0 5px;
 		border-radius: 5px;
+		margin: 0 5px;
 	}
 	.button-section{
 		padding: 20px 0;
@@ -112,15 +112,15 @@
 }
 @media only screen and (max-width: 800px) {
 	.product-main-section{
+		box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 		flex-direction: column;
-		width: 100%;
 		margin: 0 auto 40px auto;
 		padding-bottom: 10px;
-		box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+		width: 100%;
 	}
 	.product-image-section{
-		width: 100%;
 		padding-bottom: 20px;
+		width: 100%;
 	}
 	.product-detail-section{
 		width: 100%;
@@ -139,8 +139,8 @@
 		padding-left: 10px;
 	}
 	.button-section{
-		position: fixed;
 		bottom: 0;
+		position: fixed;
 		z-index: 100; // I usually don't prefer high z but carousel forced my hand, I can overwrite the property but feeling lazy.
 	}
 	.wishlist-btn{
