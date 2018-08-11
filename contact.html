@@ -11,15 +11,18 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Global Header -->
     <header class="width-100-percent">
         <div class="flex-row flex-space-between section-shadow header">
             <div>
-                <img src="./img/logo.png" alt="logo" class="header-logo"/>
+                <a href="home.html"><img src="./img/logo.png" alt="logo" class="header-logo"/></a>
             </div>
             <div class="header-desktop-options desktop-only">
                 <ul class="flex-row flex-end">
                     <li class="cursor-pointer"><a href="home.html" class="header-links">Home</a></li>
+                    <li class="cursor-pointer"><a  class="header-links">Men</a></li>
+                    <li class="cursor-pointer"><a  class="header-links">Women</a></li>
+                    <li class="cursor-pointer"><a  class="header-links">Kids</a></li>
                     <li class="cursor-pointer"><a href="contact.html" class="header-links">Contact Us</a></li>
                 </ul>
             </div>
@@ -29,14 +32,16 @@
             </div>
         </div>
     </header>
-
+    <!-- Main Contact Section -->
     <section class="width-100-percent contact-section ">
         <div class="contact-card section-shadow">
+            <!-- Logo part -->
             <div class="flex-column flex-center contact-logo">
                 <img src="./img/contact_fly_icon.png" alt="contact" class="desktop-only">
                 <h1 class="contact-heading">Contact Us</h1>
                 <span class="contact-subheading">Your feedback matters, please share your valuable thoughts</span>
             </div>
+            <!-- Form Part -->
             <div class="contact-form">
                 <form class="validate-form">
                     <div class="wrap-input1 validate-input" >
@@ -56,7 +61,7 @@
                         <span class="invalid-text none">Message is reqired</span>
                     </div>
                     <div class="width-100-percent flex-row flex-center">
-                        <button class="contact1-form-btn flex-row flex-center">
+                        <button class="contact1-form-btn flex-row flex-center cursor-pointer">
                             <span>Submit</span>
                         </button>
                     </div>
@@ -64,7 +69,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Toast Message -->
     <div class="toast-msg"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

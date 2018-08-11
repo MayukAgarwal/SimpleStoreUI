@@ -13,15 +13,18 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Global Header -->
     <header class="width-100-percent">
         <div class="flex-row flex-space-between section-shadow header">
             <div>
-                <img src="./img/logo.png" alt="logo" class="header-logo"/>
+                <a href="home.html"><img src="./img/logo.png" alt="logo" class="header-logo"/></a>
             </div>
             <div class="header-desktop-options desktop-only">
                 <ul class="flex-row flex-end">
                     <li class="cursor-pointer"><a href="home.html" class="header-links">Home</a></li>
+                    <li class="cursor-pointer"><a  class="header-links">Men</a></li>
+                    <li class="cursor-pointer"><a  class="header-links">Women</a></li>
+                    <li class="cursor-pointer"><a  class="header-links">Kids</a></li>
                     <li class="cursor-pointer"><a href="contact.html" class="header-links">Contact Us</a></li>
                 </ul>
             </div>
@@ -31,8 +34,9 @@
             </div>
         </div>
     </header>
-
+    <!-- Main Section -->
     <section class="product-main-section ">
+        <!-- Product Image Part -->
         <div class="product-image-section">
             <ul id="lightSlider">
                 <li>
@@ -49,6 +53,7 @@
                 </li>
             </ul>
         </div>
+        <!-- Product Detail Part -->
         <div class="product-detail-section flex-column">
             <div class="product-title">
                 <span>Van Heusen Men Blue Single Breasted Slim Fit Suit</span>
@@ -95,10 +100,10 @@
                 </div>
             </div>
              <div class="button-section width-100-percent">
-                <button class="wishlist-btn">
+                <button class="wishlist-btn cursor-pointer">
                     Save
                 </button>
-                <button class="buy-btn">
+                <button class="buy-btn cursor-pointer">
                     Buy Now
                 </button>
             </div>
@@ -113,7 +118,7 @@
     $("#lightSlider").lightSlider({
         item: 1,
         autoWidth: false,
-        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMove: 1,
         slideMargin: 10,
  
         addClass: '',
