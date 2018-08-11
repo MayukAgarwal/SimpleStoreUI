@@ -1,0 +1,79 @@
+.contact-section{
+	
+}
+.contact-card{
+	width: 80%;
+	border-radius: 5px;
+	background: #fff;
+	margin: 20px auto;
+	padding: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+	.contact-card{
+		display: flex;
+		flex-direction: row;
+	}
+	.contact-logo{
+		width: 50%;
+	}
+	.contact-form{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.contact-card{
+		display: flex;
+		flex-direction: column;		
+	}
+	.contact-logo{
+		width: 100%;
+	}
+	.contact-form{
+		width: 100%;
+	}
+}
+.wrap-input1{
+	width: 100%;
+	z-index: 1;
+	margin-bottom: 20px;
+}
+.input1 {
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+	outline: none;
+	border: none;
+}
+input.input1 {
+	height: 50px;
+	border-radius: 25px;
+	padding: 0 30px;
+}
+textarea.input1 {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 12px 30px;
+}
+.contact1-form-btn {
+    min-width: 193px;
+    height: 50px;
+    border-radius: 25px;
+    background: #57b846;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 0 25px;
+	outline: none;
+	border: none;
+}
+.invalid-text {
+    color: #de2525d1;
+    font-size: 0.73em;
+    margin: 0 20px;
+}

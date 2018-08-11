@@ -1,0 +1,138 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+ul{
+	list-style-type: none;
+}
+body{
+	background-color: #f2f2f2;
+}
+a{
+	text-decoration: none;
+	color:rgba(0,0,0, 0.87);
+}
+button{
+	outline-style: none;
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+.flex-center{
+	justify-content: center;
+	align-items: center;
+}
+.flex-start{
+	justify-content: flex-start;
+	align-items: center;
+}
+.flex-end{
+	justify-content: flex-end;
+	align-items: center;
+}
+.flex-space-between{
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-space-around{
+	justify-content: space-around;
+	align-items: center;
+}
+.flex-valign{
+	align-items: center;
+}
+.flex-halign{
+	justify-content: center;
+}
+.height-100-percent{
+	height: 100%;
+}
+.width-100-percent{
+	width: 100%;
+}
+.margin-0{
+	margin: 0;
+}
+.padding-0{
+	padding: 0;
+}
+.opacity-lighten-1{
+	opacity: 0.87;
+}
+.opacity-lighten-2{
+	opacity: 0.54;
+}
+.opacity-lighten-3{
+	opacity: 0.38;
+}
+.text-decoration-none{
+	text-decoration: none;
+}
+.vertical-scroll{
+	overflow-y: auto;
+}
+.horizontal-scroll{
+	overflow-x: auto;
+}
+.horizontal-scroll::-webkit-scrollbar, .vertical-scroll::-webkit-scrollbar{
+	width: 0;			/*Remove scrollbar space*/
+	background: transparent;		/*Make scrollbar invisible*/
+}
+.fixed{
+	position: fixed;
+}
+.none{
+	display: none;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.section-shadow{
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 2px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media only screen and (min-width: 800px) {
+	.mobile-only{
+		display: none;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.desktop-only{
+		display: none;
+	}
+}
+
+
+/* Header */
+.header{
+	padding: 20px;
+	background: #fff;
+}
+.header-logo{
+	width: 20%;
+	height: auto;
+}
+.header-desktop-options{
+	width: 40%;
+}
+.header-desktop-options li{
+	padding: 0 10px;
+	color: rgba(0,0,0,0.7);
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.header-mobile-options{
+	width: 30%;
+	padding: 0 10px;
+}

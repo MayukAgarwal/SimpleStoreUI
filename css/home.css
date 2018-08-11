@@ -1,0 +1,48 @@
+/* Banner section */
+.banner-section{
+	margin-bottom: 20px;
+}
+/* Products Section */
+.products-section{
+	padding: 0 25px;
+}
+.section-header{
+	font-size: 2em;
+	padding: 10px 0;
+	color: rgba(31, 29, 29, 0.81);
+}
+
+@media only screen and (min-width: 800px) {
+	.each-product{
+		width: 20%;
+		margin: 20px 2.5% 20px 2.5%;
+	}
+	.product-img{
+		border-radius: 3px;
+	}
+	.product-title{
+		font-size: 0.8em;
+		color: rgba(0,0,0,0.7);
+		padding: 5px 0;
+	}
+	.product-price{
+
+	}
+}
+@media only screen and (max-width: 800px) {
+	.each-product{
+		width: 40%;
+		margin: 20px 5% 20px 5%;
+	}
+	.product-img{
+		border-radius: 3px;
+	}
+	.product-title{
+		font-size: 0.8em;
+		color: rgba(0,0,0,0.7);
+		padding: 5px 0;
+	}
+	.product-price{
+
+	}
+}
