@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+    <!-- Global -->
+    <link rel="stylesheet" href="css/global.css">
+    <!--Main css-->
+    <link rel="stylesheet" href="css/product.css">
+    <!-- Slider css -->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+
+    <header class="width-100-percent">
+        <div class="flex-row flex-space-between section-shadow header">
+            <div>
+                <img src="./img/logo.png" alt="logo" class="header-logo"/>
+            </div>
+            <div class="header-desktop-options desktop-only">
+                <ul class="flex-row flex-end">
+                    <li class="cursor-pointer"><a href="home.html" class="header-links">Home</a></li>
+                    <li class="cursor-pointer"><a href="contact.html" class="header-links">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex-row flex-end header-mobile-options mobile-only">
+                <a href="home.html"><img src="./img/home_icon.png" alt="home"></a>
+                <a href="contact.html"><img src="./img/contact_icon.png" alt="contact"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-main-section ">
+        <div class="product-image-section">
+            <ul id="lightSlider">
+                <li>
+                    <img src="./img/product-01.jpg">
+                </li>
+                <li>
+                    <img src="./img/product-02.jpg">
+                </li>
+                <li>
+                    <img src="./img/product-03.jpg">
+                </li>
+                <li>
+                    <img src="./img/product-04.jpg">
+                </li>
+            </ul>
+        </div>
+        <div class="product-detail-section flex-column">
+            <div class="product-title">
+                <span>Van Heusen Men Blue Single Breasted Slim Fit Suit</span>
+            </div>
+            <div class="product-price-section flex-column">
+                <div class="flex-row">
+                    <span class="mrp">$50.00</span>
+                    <span class="save">(save $10.00)</span>
+                </div>
+                <span class="price">$40.00</span>
+            </div>
+            <div class="size-section flex-columne">
+                <span class="sub-section-heading">Select Size</span>
+                <div class="flex-row">
+                    <ul class="size-list flex-row">
+                        <li class="size-item">S</li>
+                        <li class="size-item">M</li>
+                        <li class="size-item">L</li>
+                        <li class="size-item">XL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-info flex-columne">
+                <span class="sub-section-heading">Product Details</span>
+                <div class="flex-row">
+                    <div class="product-info-list">
+                        <span class="product-info-heading">Lorem Ispum 1</span>
+                        <ul>
+                            <li class="">Lorem Ispum</li>
+                            <li class="">Lorem Ispum</li>
+                            <li class="">Lorem Ispum</li>
+                            <li class="">Lorem Ispum</li>
+                        </ul>
+                    </div>
+                    <div class="product-info-list">  
+                        <span class="product-info-heading">Lorem Ispum 2</span>
+                        <ul>
+                            <li class="">Lorem Ispum</li>
+                            <li class="">Lorem Ispum</li>
+                            <li class="">Lorem Ispum</li>
+                            <li class="">Lorem Ispum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <div class="button-section width-100-percent">
+                <button class="wishlist-btn">
+                    Save
+                </button>
+                <button class="buy-btn">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+    $("#lightSlider").lightSlider({
+        item: 1,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 10,
+ 
+        addClass: '',
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'ease',
+        easing: 'linear',
+ 
+        speed: 400,
+        auto: false,
+        loop: false,
+        slideEndAnimation: true,
+        pause: 2000,
+ 
+        rtl:false,
+        adaptiveHeight:false,
+ 
+        vertical:false,
+        verticalHeight:500,
+        vThumbWidth:100,
+ 
+        thumbItem:8,
+        pager: true,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+ 
+        enableTouch:true,
+        enableDrag:true,
+        freeMove:true,
+        swipeThreshold: 40,
+    });
+});
+
+</script>
+
+</body>
+</html>

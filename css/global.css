@@ -95,6 +95,15 @@ button{
 .none{
 	display: none;
 }
+.hidden{
+	visibility: hidden;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
 .cursor-pointer{
 	cursor: pointer;
 }
@@ -112,7 +121,6 @@ button{
 		display: none;
 	}
 }
-
 
 /* Header */
 .header{
@@ -135,4 +143,10 @@ button{
 .header-mobile-options{
 	width: 30%;
 	padding: 0 10px;
+}
+.header-mobile-options a{
+	padding: 0 5px;
+}
+.header-links{
+	font-size: 0.8em;
 }

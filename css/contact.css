@@ -1,12 +1,24 @@
-.contact-section{
-	
-}
 .contact-card{
 	width: 80%;
 	border-radius: 5px;
 	background: #fff;
-	margin: 20px auto;
+	margin: 30px auto;
 	padding: 30px;
+}
+.contact-logo{
+	padding: 0 25px 25px 25px;
+}
+.contact-heading{
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+.contact-subheading{
+	text-align: center;
+	font-size: 0.9em;
+	color: rgba(0,0,0,0.6);
+	width: 85%;
+	align-self: center;
 }
 
 @media only screen and (min-width: 800px) {
@@ -76,4 +88,18 @@ textarea.input1 {
     color: #de2525d1;
     font-size: 0.73em;
     margin: 0 20px;
+}
+.toast-msg{
+	text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 10px 30px;
+    border-radius: 7px;
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1em;
+    z-index: 10;
+    display: none;
 }

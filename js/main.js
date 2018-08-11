@@ -7,7 +7,8 @@
     var phone = $('.validate-input input[name="phone"]');
     var message = $('.validate-input textarea[name="message"]');
 
-    $('.validate-form').on('submit',function(){
+    $('.contact1-form-btn').on('click',function(e){
+        e.preventDefault();
         var check = true;
 
         if($(name).val().trim() == ''){
@@ -32,7 +33,7 @@
         }
 
         if(check){
-            return $.ajax({
+            $.ajax({
                 url: '/sendEmail',
                 type: 'POST',
                 data: $(".validate-form").serialize(),
@@ -42,7 +43,12 @@
                 if(typeof data !== "object"){
                 data = JSON.parse(data);
                 }
+            }).fail((data) => {
+                $(".toast-msg").html("Form submitted successfully")
+                $(".toast-msg").stop().fadeIn(400).delay(3000).fadeOut(400);
+                $('.validate-form')[0].reset();
             });
+           
         }
         else{
             return check

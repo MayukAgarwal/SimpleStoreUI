@@ -16,17 +16,21 @@
 	.each-product{
 		width: 20%;
 		margin: 20px 2.5% 20px 2.5%;
+		overflow: hidden;
 	}
 	.product-img{
 		border-radius: 3px;
+		cursor: pointer;
+	}
+	.product-img:hover{
+		-ms-transform: scale(1.04);
+		-webkit-transform: scale(1.04);
+		transform: scale(1.04);
 	}
 	.product-title{
 		font-size: 0.8em;
 		color: rgba(0,0,0,0.7);
 		padding: 5px 0;
-	}
-	.product-price{
-
 	}
 }
 @media only screen and (max-width: 800px) {
@@ -41,8 +45,5 @@
 		font-size: 0.8em;
 		color: rgba(0,0,0,0.7);
 		padding: 5px 0;
-	}
-	.product-price{
-
 	}
 }
